@@ -1,0 +1,28 @@
+.A {
+	font-size: 5em;
+	color: red;
+	animation: changeColor 1s ease-in-out infinite;
+}
+.B {
+	font-size: 5em;
+	color: rgb(16, 14, 14);
+	animation: changeColor2 2s ease-in-out infinite;
+}
+
+@keyframes changeColor {
+	0% {
+		color: red;
+	}
+	20% {
+		color: white;
+	}
+}
+
+@keyframes changeColor2 {
+	0% {
+		color: blue;
+	}
+    20% {
+        color: white;
+    }
+}

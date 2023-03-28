@@ -1,0 +1,54 @@
+.container {
+	margin: 100px auto;
+	width: 500px;
+	height: 250px;
+	position: relative;
+}
+
+.mobil {
+	width: 100px;
+	height: 50px;
+	background-color: red;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	animation: drive 5s linear infinite;
+}
+
+.roda {
+	width: 25px;
+	height: 25px;
+	background-color: black;
+	border-radius: 50%;
+	position: absolute;
+	bottom: 0;
+}
+
+.roda.kiri {
+	left: 10px;
+}
+
+.roda.kanan {
+	right: 10px;
+}
+
+.badan {
+	width: 50px;
+	height: 25px;
+	background-color: white;
+	position: absolute;
+	bottom: 0;
+	left: 25px;
+}
+
+@keyframes drive {
+	0% {
+		transform: translateX(0);
+	}
+	50% {
+		transform: translateX(400px);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}

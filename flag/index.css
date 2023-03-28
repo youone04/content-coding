@@ -1,0 +1,37 @@
+.pole {
+    height: 300px;
+    width: 10px;
+    background-color: gray;
+  }
+
+  .cloth {
+    height: 100px;
+    width: 200px;
+    background-color: red;
+    position: absolute;
+    left: 10px;
+    top: 20px;
+    transform-origin: bottom;
+    animation-name: flag-waving;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+
+  @keyframes flag-waving {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(10deg);
+    }
+    50% {
+      transform: rotate(0deg);
+    }
+    75% {
+      transform: rotate(-10deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+}
